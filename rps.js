@@ -53,14 +53,19 @@ function game(){
     const computerSelection = getComputerChoice();
     // console.log(computerSelection)
     playRound(playerSelection.toLowerCase(),computerSelection)
-    console.log(`Player Score: ${playerWin}, Computer Score: ${computerWin}`)
+    return `Player Score: ${playerWin}, Computer Score: ${computerWin}`
 }
 
+let result = playerWin > computerWin ? "You Win the game!" : "You lose the game :("
+
+let gamesPlayed = 0;
+
+while(gamesPlayed < 5){
+    console.log(game())
+    gamesPlayed++
+}
+
+alert(result)
 
 
-console.log(game())
-console.log(game())
-console.log(game())
-console.log(game())
-console.log(game())
 
