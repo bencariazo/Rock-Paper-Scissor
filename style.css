@@ -56,3 +56,10 @@ div.title {
     margin-bottom: 50px;
     font-weight: 800;
 }
+
+div#scores {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px;
+}
