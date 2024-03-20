@@ -63,3 +63,8 @@ div#scores {
     align-items: center;
     margin-bottom: 60px;
 }
+div.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
