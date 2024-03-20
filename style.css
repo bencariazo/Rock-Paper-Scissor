@@ -96,3 +96,9 @@ button {
     text-align: center;
     cursor: pointer;
 }
+
+img.img-rock,
+img.img-scissors {
+    height: 180px;
+    padding: 10px;
+}
