@@ -72,3 +72,9 @@ div.container{
 h1 {
     font-size: 36px;
 }
+
+.tools {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
