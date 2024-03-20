@@ -102,3 +102,12 @@ img.img-scissors {
     height: 180px;
     padding: 10px;
 }
+
+#rock, 
+#paper, 
+#scissors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
