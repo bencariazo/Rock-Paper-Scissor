@@ -111,3 +111,8 @@ img.img-scissors {
     justify-content: space-between;
     align-items: center;
 }
+
+div.result {
+    display: flex;
+    justify-content: center;
+}
