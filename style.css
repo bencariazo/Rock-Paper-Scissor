@@ -78,3 +78,9 @@ h1 {
     flex: 1;
     justify-content: space-evenly;
 }
+
+img {
+    height: 200px;
+    border: solid 5px black;
+    margin-bottom: 30px;
+}
