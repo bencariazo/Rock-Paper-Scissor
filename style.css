@@ -116,3 +116,10 @@ div.result {
     display: flex;
     justify-content: center;
 }
+
+.result, 
+#scores {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
