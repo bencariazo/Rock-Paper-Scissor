@@ -169,3 +169,7 @@ div.result {
 .overlay.active {
     display: block;
 }
+
+#endgameMsg {
+    color: white;
+}
