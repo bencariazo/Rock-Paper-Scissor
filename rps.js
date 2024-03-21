@@ -44,6 +44,9 @@ const resetScores = () => {
     overlay.classList.remove('active')
 }
 function playRound(playerSelection, computerSelection){
+    if(playerSelection === computerSelection){
+        result.textContent = "It's a tie!"
+    }
     if(playerSelection == "rock"){
         if(computerSelection == "paper"){
             computerWin++
