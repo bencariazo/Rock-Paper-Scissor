@@ -34,6 +34,15 @@ btnScissors.addEventListener('click', (e) => {
     playerSelection = e.target.className;
     playGame();
 });
+const resetScores = () => {
+    playerWin = 0;
+    computerWin = 0;
+    pScore.textContent = playerWin;
+    cScore.textContent = computerWin;
+    result.textContent = '';
+    endgameModal.classList.remove('active')
+    overlay.classList.remove('active')
+}
 function playRound(playerSelection, computerSelection){
     if(playerSelection == "rock"){
         if(computerSelection == "paper"){
