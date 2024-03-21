@@ -165,3 +165,7 @@ div.result {
     background-color: black;
     opacity: 0.6;
 }
+
+.overlay.active {
+    display: block;
+}
