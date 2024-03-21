@@ -88,6 +88,11 @@ function getComputerChoice(){
     return item[chooseItem]
 };
 
+const isGameOver = () => {
+    return playerWin === 5 || computerWin === 5;
+}
+
+
     const computerSelection = getComputerChoice();
     // console.log(computerSelection)
     playRound(playerSelection.toLowerCase(),computerSelection)
