@@ -1,14 +1,6 @@
-// create a function that would choose random item for the computer
-function getComputerChoice(){
-    const item = ["rock","paper","scissors"]
-    let chooseItem = Math.floor(Math.random() * item.length)
-    return item[chooseItem]
-};
-
-// create a function that would play the game
-
 let playerWin = 0;
 let computerWin = 0;
+
 const btnRock = document.querySelector(".rock");
 const btnPaper = document.querySelector(".paper");
 const btnScissors = document.querySelector(".scissors");
@@ -20,6 +12,7 @@ const overlay = document.querySelector('.overlay');
 const endgameMsg = document.querySelector('#endgameMsg')
 
 const result = document.querySelector("div.result")
+
 btnRock.addEventListener('click', (e) => {
     playerSelection = e.target.className;
     playGame();
@@ -34,6 +27,7 @@ btnScissors.addEventListener('click', (e) => {
     playerSelection = e.target.className;
     playGame();
 });
+
 const resetScores = () => {
     playerWin = 0;
     computerWin = 0;
@@ -43,6 +37,7 @@ const resetScores = () => {
     endgameModal.classList.remove('active')
     overlay.classList.remove('active')
 }
+
 function playRound(playerSelection, computerSelection){
     if(playerSelection === computerSelection){
         result.textContent = "It's a tie!"
