@@ -107,3 +107,12 @@ function playGame(){
     }
 };
 
+function openEndgameModal() {
+    endgameModal.classList.add('active')
+    overlay.classList.add('active')
+}
+  
+function closeEndgameModal() {
+    endgameModal.classList.remove('active')
+    overlay.classList.remove('active')
+}
