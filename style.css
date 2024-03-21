@@ -164,6 +164,7 @@ div.result {
     height: 100%;
     background-color: black;
     opacity: 0.6;
+    pointer-events: none;
 }
 
 .overlay.active {
