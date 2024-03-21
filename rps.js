@@ -116,3 +116,9 @@ function closeEndgameModal() {
     endgameModal.classList.remove('active')
     overlay.classList.remove('active')
 }
+
+function setFinalMessage() {
+    return playerWin > computerWin
+      ? (endgameMsg.textContent = 'You won the round!')
+      : (endgameMsg.textContent = 'You lost the round...')
+}
