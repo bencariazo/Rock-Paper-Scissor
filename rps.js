@@ -92,23 +92,18 @@ const isGameOver = () => {
     return playerWin === 5 || computerWin === 5;
 }
 
+function playGame(){
+    if(isGameOver()){
+        openEndgameModal();
+        return
+    }
 
     const computerSelection = getComputerChoice();
-    // console.log(computerSelection)
-    playRound(playerSelection.toLowerCase(),computerSelection)
-    return `Player Score: ${playerWin}, Computer Score: ${computerWin}`
-}
+    playRound(playerSelection, computerSelection);
 
-let result = playerWin > computerWin ? "You Win the game!" : "You lose the game :("
-
-let gamesPlayed = 0;
-
-while(gamesPlayed < 5){
-    console.log(game())
-    gamesPlayed++
-}
-
-alert(result)
-
-
+    if (isGameOver()) {
+        openEndgameModal()
+        setFinalMessage()
+    }
+};
 
