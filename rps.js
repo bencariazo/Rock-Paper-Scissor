@@ -20,6 +20,20 @@ const overlay = document.querySelector('.overlay');
 const endgameMsg = document.querySelector('#endgameMsg')
 
 const result = document.querySelector("div.result")
+btnRock.addEventListener('click', (e) => {
+    playerSelection = e.target.className;
+    playGame();
+});
+
+btnPaper.addEventListener('click', (e) => {
+    playerSelection = e.target.className;
+    playGame();
+});
+
+btnScissors.addEventListener('click', (e) => {
+    playerSelection = e.target.className;
+    playGame();
+});
 function playRound(playerSelection, computerSelection){
     if(playerSelection == "rock"){
         if(computerSelection == "paper"){
