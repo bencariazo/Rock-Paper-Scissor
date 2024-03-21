@@ -122,3 +122,6 @@ function setFinalMessage() {
       ? (endgameMsg.textContent = 'You won the round!')
       : (endgameMsg.textContent = 'You lost the round...')
 }
+
+restartBtn.addEventListener('click', resetScores)
+// overlay.addEventListener('click', closeEndgameModal)
