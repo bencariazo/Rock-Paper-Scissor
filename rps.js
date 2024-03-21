@@ -9,6 +9,17 @@ function getComputerChoice(){
 
 let playerWin = 0;
 let computerWin = 0;
+const btnRock = document.querySelector(".rock");
+const btnPaper = document.querySelector(".paper");
+const btnScissors = document.querySelector(".scissors");
+const pScore = document.querySelector(".player-score span");
+const cScore = document.querySelector(".computer-score span");
+const endgameModal = document.querySelector('#endgameModal')
+const restartBtn = document.querySelector('.btn-restart');
+const overlay = document.querySelector('.overlay');
+const endgameMsg = document.querySelector('#endgameMsg')
+
+const result = document.querySelector("div.result")
 function playRound(playerSelection, computerSelection){
     if(playerSelection == "rock"){
         if(computerSelection == "paper"){
