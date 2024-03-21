@@ -47,46 +47,39 @@ function playRound(playerSelection, computerSelection){
     if(playerSelection === computerSelection){
         result.textContent = "It's a tie!"
     }
+    
     if(playerSelection == "rock"){
         if(computerSelection == "paper"){
-            computerWin++
-            console.log(`You Lose! Paper beats Rock!`)
+            ++computerWin;
+            cScore.textContent = computerWin;
+            result.textContent = "You Lose! Paper beats Rock!"
         } else if(computerSelection == "scissors"){
-            playerWin++
-            console.log("You Win! Scissors can't cut Rock!")
-        } else {
-            console.log("It's a tie!")
+            ++playerWin;
+            pScore.textContent = playerWin;
+            result.textContent = "You Win! Scissors can't cut Rock!"
         }
     } else if (playerSelection == "paper"){
         if(computerSelection == "scissors"){
-            computerWin++
-            console.log("You Lose! Scissors cuts Paper!")
+            ++computerWin;
+            cScore.textContent = computerWin;
+            result.textContent = "You Lose! Scissors cuts Paper!"
         } else if(computerSelection == "rock"){
-            playerWin++
-            // console.log(`Player Score: ${playerWin}, Computer Score: ${computerWin}`)
-            console.log("You Win! Paper beats Rock!")
-        } else {
-            // console.log(`Player Score: ${playerWin}, Computer Score: ${computerWin}`)
-            console.log("It's a tie!")
-        }
+            ++playerWin;
+            pScore.textContent = playerWin;
+            result.textContent = "You Win! Paper beats Rock!"
+        } 
     } else if (playerSelection == "scissors"){
         if(computerSelection == "paper"){
-            playerWin++
-            // console.log(`Player Score: ${playerWin}, Computer Score: ${computerWin}`)
-            console.log("You Win! Scissors cuts Paper")
+            ++playerWin;
+            pScore.textContent = playerWin;
+            result.textContent = "You Win! Scissors cuts Paper"
         } else if (computerSelection == "rock"){
-            computerWin++
-            // console.log(`Player Score: ${playerWin}, Computer Score: ${computerWin}`)
-            console.log("You Lose! Rock beat Scissors!")
-        } else {
-            console.log("It's a tie!")
+            ++computerWin;
+            cScore.textContent = computerWin;
+            result.textContent = "You Lose! Rock beat Scissors!"
         }
     }
 };
-// const playerSelection = "rock"
-
-function game(){
-    const playerSelection = prompt("What would you choose (Rock, Paper, or Scissors)?")
     const computerSelection = getComputerChoice();
     // console.log(computerSelection)
     playRound(playerSelection.toLowerCase(),computerSelection)
